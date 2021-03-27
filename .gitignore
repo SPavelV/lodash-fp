@@ -1,0 +1,31 @@
+## IDE files
+.idea
+.vscode
+debug.log
+
+## Node
+node_modules/
+npm-debug.log
+
+## Other
+.DS_Store
+Thumbs.db
+
+## Testing
+/coverage
+
+## Stories
+storybook-static/
+
+## Build
+build/
+dist/
+
+## Env
+env/*
+
+config/webpack.local.config.js
+
+## Exceptions
+!env/*.example
+!.gitkeep
