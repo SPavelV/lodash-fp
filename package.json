@@ -2,9 +2,16 @@
   "name": "lodash-fp",
   "version": "1.0.0",
   "description": "",
-  "main": "VladimirMayakovsky.js",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -16,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/SPavelV/lodash-fp/issues"
   },
-  "homepage": "https://github.com/SPavelV/lodash-fp#readme",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
+  "homepage": "https://github.com/SPavelV/lodash-fp#readme"
 }

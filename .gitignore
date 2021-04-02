@@ -29,3 +29,8 @@ config/webpack.local.config.js
 ## Exceptions
 !env/*.example
 !.gitkeep
+
+##parcel tmp
+.parcel-cache/
+dist/
+
