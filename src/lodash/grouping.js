@@ -21,15 +21,14 @@ const users = [
   },
 ];
 
+const resultFunction = _.groupBy(users, (user) => user.active);
+console.log(`resultFunction`, resultFunction);
+
+const resultLo = _.groupBy(users, "active");
+console.log(`resultLo`, resultLo);
+
 const groupBy = (list, prop) => {
   return list.reduce((aggregator, element) => {
-    console.log(
-      "qqq",
-      aggregator,
-      element,
-      element[prop],
-      aggregator[element[prop]]
-    );
     (aggregator[element[prop]] = aggregator[element[prop]] || []).push(element);
     return aggregator;
   }, {});
