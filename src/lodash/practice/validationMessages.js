@@ -15,15 +15,14 @@ const bakendErrors = {
   },
 };
 
-const getValidationErrors = (data) => {
-  return _.map(data, (value, key) => {
+const getValidationErrors = (data) =>
+  _.map(data, (value, key) => {
     const errors = _.chain(value.errors)
       .map((value) => value.message)
       .join(", ")
       .value();
     return `${_.upperFirst(key)}: ${errors}`;
   });
-};
 
-const result = getValidationErrors(bakendErrors);
+const result = getValidationErrors(backendErrors);
 console.log(`result `, result);
